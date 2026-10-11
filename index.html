@@ -1,242 +1,217 @@
-
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#176534">
-<meta name="description" content="महाराणा कीर्ति सिंह जाट छात्रावास, मुरार, ग्वालियर। शिक्षा, समाज सेवा और छात्र सहायता।">
-<title>महाराणा कीर्ति सिंह जाट छात्रावास</title>
-<style>
-:root {
-  --green:#176534;
-  --dark:#104523;
-  --saffron:#c66a17;
-  --cream:#fffaf0;
-  --white:#ffffff;
-  --text:#263238;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{
-  margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;
-  background:var(--cream);color:var(--text);line-height:1.75
-}
-header{
-  background:linear-gradient(135deg,var(--dark),var(--green));
-  color:white;text-align:center;padding:27px 14px
-}
-header h1{font-size:clamp(23px,5vw,36px);margin:0 0 6px}
-header p{margin:0;font-size:17px}
-nav{
-  background:var(--saffron);padding:10px;
-  display:flex;justify-content:center;flex-wrap:wrap;gap:5px;
-  position:sticky;top:0;z-index:10
-}
-nav a{
-  color:white;text-decoration:none;padding:8px 11px;
-  font-weight:bold;border-radius:7px
-}
-nav a:hover{background:rgba(255,255,255,.2)}
-main{max-width:1050px;margin:auto;padding:22px 16px 40px}
-.hero{
-  text-align:center;background:#f5ead5;padding:32px 18px;
-  border-radius:18px;border:1px solid #eadcc2
-}
-.hero h2{font-size:clamp(24px,5vw,34px);margin:0 0 10px;color:var(--green)}
-.hero p{font-size:18px;margin:0 0 20px}
-.btn{
-  display:inline-block;background:var(--green);color:white;
-  padding:11px 18px;border-radius:8px;text-decoration:none;
-  font-weight:bold;margin:4px;border:0
-}
-.btn.orange{background:var(--saffron)}
-section{margin-top:34px}
-h2.section-title{color:var(--green);font-size:26px;margin-bottom:14px}
-p{overflow-wrap:anywhere}
-.cards{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:15px
-}
-.card{
-  background:white;border:1px solid #e2dfd5;border-radius:13px;
-  padding:18px;box-shadow:0 3px 12px #00000008
-}
-.card h3{color:var(--green);margin-top:0}
-.gallery{
-  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px
-}
-.gallery figure{margin:0;background:white;border-radius:12px;overflow:hidden;
-  border:1px solid #e2dfd5}
-.gallery img{display:block;width:100%;height:190px;object-fit:cover}
-.gallery figcaption{padding:8px 10px;font-size:14px}
-.notice{background:#fff0d8;border-left:5px solid var(--saffron);
-  padding:14px;border-radius:7px}
-ul{padding-left:22px}
-.member-role{color:#555;font-size:14px}
-.contact-box{text-align:center;background:#eaf4ec;padding:22px;border-radius:14px}
-footer{background:var(--dark);color:white;text-align:center;padding:23px 14px}
-footer p{margin:5px}
-.small{font-size:13px;color:#666}
-@media(min-width:700px){
-  .gallery{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .gallery img{height:220px}
-}
-@media(max-width:380px){
-  nav a{padding:7px;font-size:14px}
-  .gallery img{height:145px}
-}
-</style>
-</head>
-<body>
-
-<header>
-  <h1>महाराणा कीर्ति सिंह जाट छात्रावास</h1>
-  <p>शिक्षा • समाज सेवा • छात्र सहायता</p>
-  <p>मुरार, ग्वालियर, मध्य प्रदेश</p>
-</header>
-
-<nav aria-label="मुख्य मेनू">
-  <a href="#home">होम</a>
-  <a href="#about">परिचय</a>
-  <a href="#gallery">फोटो गैलरी</a>
-  <a href="#committee">समिति</a>
-  <a href="#students">छात्र सहायता</a>
-  <a href="#contact">संपर्क</a>
-</nav>
-
-<main>
-<section class="hero" id="home">
-  <h2>आपका हार्दिक स्वागत है</h2>
-  <p>शिक्षा, अनुशासन और संस्कार ही सफलता का आधार हैं।</p>
-  <a class="btn" href="#about">हमारे बारे में</a>
-  <a class="btn orange" href="#contact">संपर्क करें</a>
-</section>
-
-<section id="about">
-  <h2 class="section-title">हमारे बारे में</h2>
-  <div class="card">
-    <p>
-      महाराणा कीर्ति सिंह जाट छात्रावास, मुरार, ग्वालियर का उद्देश्य
-      विद्यार्थियों को शिक्षा, अनुशासन और आगे बढ़ने के लिए प्रोत्साहित
-      करना है। हमारा प्रयास विद्यार्थियों को बेहतर भविष्य बनाने के लिए
-      सकारात्मक वातावरण और मार्गदर्शन उपलब्ध कराने का है।
-    </p>
-    <p><strong>हमारा संकल्प:</strong> शिक्षा, समाज सेवा, सहयोग और संस्कार।</p>
-  </div>
-</section>
-
-<section id="gallery">
-  <h2 class="section-title">फोटो गैलरी</h2>
-  <p>छात्रावास, सामाजिक कार्यक्रमों और शिक्षा संबंधी गतिविधियों की झलक।</p>
-  <div class="gallery">
-    <figure>
-      <img src="photo1.jpg" alt="छात्रावास का भवन" loading="lazy">
-      <figcaption>छात्रावास</figcaption>
-    </figure>
-    <figure>
-      <img src="photo2.jpg" alt="समिति के सदस्य" loading="lazy">
-      <figcaption>समिति</figcaption>
-    </figure>
-    <figure>
-      <img src="photo3.jpg" alt="छात्रावास का कार्यक्रम" loading="lazy">
-      <figcaption>सामाजिक कार्यक्रम</figcaption>
-    </figure>
-    <figure>
-      <img src="photo4.jpg" alt="शिक्षा संबंधी गतिविधि" loading="lazy">
-      <figcaption>शिक्षा और मार्गदर्शन</figcaption>
-    </figure>
-    <figure>
-      <img src="photo5.jpg" alt="समाज सेवा कार्यक्रम" loading="lazy">
-      <figcaption>समाज सेवा</figcaption>
-    </figure>
-    <figure>
-      <img src="photo6.jpg" alt="छात्रावास की अन्य गतिविधि" loading="lazy">
-      <figcaption>हमारी गतिविधियाँ</figcaption>
-    </figure>
-  </div>
-  <p class="small">फोटो दिखाने के लिए photo1.jpg से photo6.jpg तक की तस्वीरें इसी Repository में अपलोड करें।</p>
-</section>
-
-<section id="committee">
-  <h2 class="section-title">प्रबंध समिति</h2>
-  <p>समिति के उपलब्ध पदाधिकारी एवं सदस्य:</p>
-  <div class="cards">
-    <div class="card"><h3>प्राण सिंह राणा</h3><div class="member-role">अध्यक्ष</div></div>
-    <div class="card"><h3>हाकिम सिंह</h3><div class="member-role">वरिष्ठ उपाध्यक्ष</div></div>
-    <div class="card"><h3>दुष्यंत सिंह राणा</h3><div class="member-role">उपाध्यक्ष</div></div>
-    <div class="card"><h3>माधव सिंह राणा</h3><div class="member-role">महासचिव</div></div>
-    <div class="card"><h3>योगेंद्र राणा</h3><div class="member-role">सहसचिव</div></div>
-    <div class="card"><h3>रविंद्र सिंह</h3><div class="member-role">कोषाध्यक्ष</div></div>
-    <div class="card"><h3>देवेंद्र सिंह राणा</h3><div class="member-role">छात्रावास अधीक्षक</div></div>
-    <div class="card"><h3>आदित्य राणा</h3><div class="member-role">छात्र/युवा प्रतिनिधि</div></div>
-    <div class="card"><h3>धर्मेंद्र सिंह राणा</h3><div class="member-role">कार्यालय मंत्री/सहायक</div></div>
-    <div class="card"><h3>दिलीप सिंह राणा</h3><div class="member-role">आंतरिक लेखा परीक्षक</div></div>
-  </div>
-
-  <h3>समिति के अन्य सदस्य</h3>
-  <div class="card">
-    सोनू बाबू राणा • पुष्पेंद्र सिंह • विक्रम सिंह राणा •
-    नागेंद्र सिंह • नवल सिंह • संजय राणा • हरेंद्र सिंह राणा
-    (मीडिया प्रभारी) • प्रवीणेंद्र सिंह राणा • जितेंद्र सिंह जाट •
-    रविंद्र सिंह राणा
-  </div>
-  <p class="small">प्रकाशित करने से पहले कृपया सभी नामों और पदों की वर्तनी समिति से सत्यापित कर लें।</p>
-</section>
-
-<section id="students">
-  <h2 class="section-title">छात्र सहायता एवं प्रवेश जानकारी</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>छात्रावास प्रवेश</h3>
-      <p>प्रवेश की उपलब्धता, पात्रता, नियम और आवश्यक दस्तावेजों के लिए प्रबंध समिति से संपर्क करें।</p>
-    </div>
-    <div class="card">
-      <h3>आवश्यक दस्तावेज</h3>
-      <ul>
-        <li>पिछली कक्षा की अंकसूची</li>
-        <li>आय प्रमाण पत्र</li>
-        <li>निवास प्रमाण पत्र</li>
-        <li>आधार कार्ड</li>
-        <li>पासपोर्ट साइज फोटो</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>दानदाता एवं समाज सहयोग</h3>
-      <p>छात्रों की शिक्षा और छात्रावास के विकास में सहयोग देने के लिए समिति से संपर्क करें।</p>
-    </div>
-  </div>
-  <div class="notice">
-    <strong>महत्वपूर्ण:</strong> यह वेबसाइट जानकारी देने के लिए है।
-    प्रवेश की पुष्टि, दान की रसीद या आवेदन जमा होने की पुष्टि
-    WhatsApp संपर्क से अलग से प्राप्त करें।
-  </div>
-</section>
-
-<section id="contact">
-  <h2 class="section-title">संपर्क करें</h2>
-  <div class="contact-box">
-    <h3>महाराणा कीर्ति सिंह जाट छात्रावास</h3>
-    <p>मुरार, ग्वालियर, मध्य प्रदेश</p>
-    <p>प्रबंध समिति से जानकारी एवं छात्र सहायता के लिए संपर्क करें।</p>
-    <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">
-      WhatsApp पर संपर्क करें
-    </a>
-    <p class="small">WhatsApp बटन चलाने के लिए कोड में अपना सही नंबर डालें।</p>
-  </div>
-</section>
-</main>
-
-<footer>
-  <p><strong>महाराणा कीर्ति सिंह जाट छात्रावास</strong></p>
-  <p>शिक्षा • समाज सेवा • छात्र सहायता</p>
-  <p>© <span id="year">2026</span> प्रबंध समिति</p>
-</footer>
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-</body>
-</html>
-<a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">
-  WhatsApp पर संपर्क करें
-</a>
+<!DOCTYPE html>  <html lang="hi">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<meta name="theme-color" content="#176534">  
+<meta name="description" content="महाराणा कीर्ति सिंह जाट छात्रावास, हुजरात पुल लश्कर, ग्वालियर। शिक्षा, समाज सेवा और छात्र सहायता।">  
+<title>महाराणा कीर्ति सिंह जाट छात्रावास</title>  
+<style>  
+:root {  
+  --green:#176534;  
+  --dark:#104523;  
+  --saffron:#c66a17;  
+  --cream:#fffaf0;  
+  --white:#ffffff;  
+  --text:#263238;  
+}  
+*{box-sizing:border-box}  
+html{scroll-behavior:smooth;scroll-padding-top:72px}  
+body{  
+  margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;  
+  background:var(--cream);color:var(--text);line-height:1.75  
+}  
+header{  
+  background:linear-gradient(135deg,var(--dark),var(--green));  
+  color:white;text-align:center;padding:27px 14px  
+}  
+header h1{font-size:clamp(23px,5vw,36px);margin:0 0 6px}  
+header p{margin:0;font-size:17px}  
+nav{  
+  background:var(--saffron);padding:10px;  
+  display:flex;justify-content:center;flex-wrap:wrap;gap:5px;  
+  position:sticky;top:0;z-index:10  
+}  
+nav a{  
+  color:white;text-decoration:none;padding:8px 11px;  
+  font-weight:bold;border-radius:7px  
+}  
+nav a:hover{background:rgba(255,255,255,.2)}  
+main{max-width:1050px;margin:auto;padding:22px 16px 40px}  
+.hero{  
+  text-align:center;background:#f5ead5;padding:32px 18px;  
+  border-radius:18px;border:1px solid #eadcc2  
+}  
+.hero h2{font-size:clamp(24px,5vw,34px);margin:0 0 10px;color:var(--green)}  
+.hero p{font-size:18px;margin:0 0 20px}  
+.btn{  
+  display:inline-block;background:var(--green);color:white;  
+  padding:11px 18px;border-radius:8px;text-decoration:none;  
+  font-weight:bold;margin:4px;border:0  
+}  
+.btn.orange{background:var(--saffron)}  
+section{margin-top:34px}  
+h2.section-title{color:var(--green);font-size:26px;margin-bottom:14px}  
+p{overflow-wrap:anywhere}  
+.cards{  
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));  
+  gap:15px  
+}  
+.card{  
+  background:white;border:1px solid #e2dfd5;border-radius:13px;  
+  padding:18px;box-shadow:0 3px 12px #00000008  
+}  
+.card h3{color:var(--green);margin-top:0}  
+.gallery{  
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px  
+}  
+.gallery figure{margin:0;background:white;border-radius:12px;overflow:hidden;  
+  border:1px solid #e2dfd5}  
+.gallery img{display:block;width:100%;height:190px;object-fit:cover}  
+.gallery figcaption{padding:8px 10px;font-size:14px}  
+.notice{background:#fff0d8;border-left:5px solid var(--saffron);  
+  padding:14px;border-radius:7px}  
+ul{padding-left:22px}  
+.member-role{color:#555;font-size:14px}  
+.contact-box{text-align:center;background:#eaf4ec;padding:22px;border-radius:14px}  
+footer{background:var(--dark);color:white;text-align:center;padding:23px 14px}  
+footer p{margin:5px}  
+.small{font-size:13px;color:#666}  
+@media(min-width:700px){  
+  .gallery{grid-template-columns:repeat(3,minmax(0,1fr))}  
+  .gallery img{height:220px}  
+}  
+@media(max-width:380px){  
+  nav a{padding:7px;font-size:14px}  
+  .gallery img{height:145px}  
+}  
+</style>  
+</head>  
+<body>  <header>  
+  <h1>महाराणा कीर्ति सिंह जाट छात्रावास</h1>  
+  <p>शिक्षा • समाज सेवा • छात्र सहायता</p>  
+  <p>मुरार, ग्वालियर, मध्य प्रदेश</p>  
+</header>  <nav aria-label="मुख्य मेनू">  
+  <a href="#home">होम</a>  
+  <a href="#about">परिचय</a>  
+  <a href="#gallery">फोटो गैलरी</a>  
+  <a href="#committee">समिति</a>  
+  <a href="#students">छात्र सहायता</a>  
+  <a href="#contact">संपर्क</a>  
+</nav>  <main>  
+<section class="hero" id="home">  
+  <h2>आपका हार्दिक स्वागत है</h2>  
+  <p>शिक्षा, अनुशासन और संस्कार ही सफलता का आधार हैं।</p>  
+  <a class="btn" href="#about">हमारे बारे में</a>  
+  <a class="btn orange" href="#contact">संपर्क करें</a>  
+</section>  <section id="about">  
+  <h2 class="section-title">हमारे बारे में</h2>  
+  <div class="card">  
+    <p>  
+      महाराणा कीर्ति सिंह जाट छात्रावास,  हुजरात पुल लश्कर, ग्वालियर का उद्देश्य  
+      विद्यार्थियों को शिक्षा, अनुशासन और आगे बढ़ने के लिए प्रोत्साहित  
+      करना है। हमारा प्रयास विद्यार्थियों को बेहतर भविष्य बनाने के लिए  
+      सकारात्मक वातावरण और मार्गदर्शन उपलब्ध कराने का है।  
+    </p>  
+    <p><strong>हमारा संकल्प:</strong> शिक्षा, समाज सेवा, सहयोग और संस्कार।</p>  
+  </div>  
+</section>  <section id="gallery">  
+  <h2 class="section-title">फोटो गैलरी</h2>  
+  <p>छात्रावास, सामाजिक कार्यक्रमों और शिक्षा संबंधी गतिविधियों की झलक।</p>  
+  <div class="gallery">  
+    <figure>  
+      <img src="photo1.jpg" alt="छात्रावास का भवन" loading="lazy">  
+      <figcaption>छात्रावास</figcaption>  
+    </figure>  
+    <figure>  
+      <img src="photo2.jpg" alt="समिति के सदस्य" loading="lazy">  
+      <figcaption>समिति</figcaption>  
+    </figure>  
+    <figure>  
+      <img src="photo3.jpg" alt="छात्रावास का कार्यक्रम" loading="lazy">  
+      <figcaption>सामाजिक कार्यक्रम</figcaption>  
+    </figure>  
+    <figure>  
+      <img src="photo4.jpg" alt="शिक्षा संबंधी गतिविधि" loading="lazy">  
+      <figcaption>शिक्षा और मार्गदर्शन</figcaption>  
+    </figure>  
+    <figure>  
+      <img src="photo5.jpg" alt="समाज सेवा कार्यक्रम" loading="lazy">  
+      <figcaption>समाज सेवा</figcaption>  
+    </figure>  
+    <figure>  
+      <img src="photo6.jpg" alt="छात्रावास की अन्य गतिविधि" loading="lazy">  
+      <figcaption>हमारी गतिविधियाँ</figcaption>  
+    </figure>  
+  </div>  
+  <p class="small">फोटो दिखाने के लिए photo1.jpg से photo6.jpg तक की तस्वीरें इसी Repository में अपलोड करें।</p>  
+</section>  <section id="committee">  
+  <h2 class="section-title">प्रबंध समिति</h2>  
+  <p>समिति के उपलब्ध पदाधिकारी एवं सदस्य:</p>  
+  <div class="cards">  
+    <div class="card"><h3>प्राण सिंह राणा</h3><div class="member-role">अध्यक्ष</div></div>  
+    <div class="card"><h3>हाकिम सिंह</h3><div class="member-role">वरिष्ठ उपाध्यक्ष</div></div>  
+    <div class="card"><h3>दुष्यंत सिंह राणा</h3><div class="member-role">उपाध्यक्ष</div></div>  
+    <div class="card"><h3>माधव सिंह राणा</h3><div class="member-role">महासचिव</div></div>  
+    <div class="card"><h3>योगेंद्र राणा</h3><div class="member-role">सहसचिव</div></div>  
+    <div class="card"><h3>रविंद्र सिंह</h3><div class="member-role">कोषाध्यक्ष</div></div>  
+    <div class="card"><h3>देवेंद्र सिंह राणा</h3><div class="member-role">छात्रावास अधीक्षक</div></div>  
+    <div class="card"><h3>आदित्य राणा</h3><div class="member-role">छात्र/युवा प्रतिनिधि</div></div>  
+    <div class="card"><h3>धर्मेंद्र सिंह राणा</h3><div class="member-role">कार्यालय मंत्री/सहायक</div></div>  
+    <div class="card"><h3>दिलीप सिंह राणा</h3><div class="member-role">आंतरिक लेखा परीक्षक</div></div>  
+  </div>हरेंद्र सिंह राणा  
+    (मीडिया प्रभारी)     <h3>समिति के अन्य सदस्य</h3>  
+  <div class="card">  
+    सोनू बाबू राणा • पुष्पेंद्र सिंह • विक्रम सिंह राणा •  
+    नागेंद्र सिंह • नवल सिंह • संजय राणा • • प्रवीणेंद्र सिंह राणा • जितेंद्र सिंह जाट •  
+    रविंद्र सिंह राणा  
+  </div>  
+  <p class="small">प्रकाशित करने से पहले कृपया सभी नामों और पदों की वर्तनी समिति से सत्यापित कर लें।</p>  
+</section>  <section id="students">  
+  <h2 class="section-title">छात्र सहायता एवं प्रवेश जानकारी</h2>  
+  <div class="cards">  
+    <div class="card">  
+      <h3>छात्रावास प्रवेश</h3>  
+      <p>प्रवेश की उपलब्धता, पात्रता, नियम और आवश्यक दस्तावेजों के लिए प्रबंध समिति से संपर्क करें।</p>  
+    </div>  
+    <div class="card">  
+      <h3>आवश्यक दस्तावेज</h3>  
+      <ul>  
+        <li>पिछली कक्षा की अंकसूची</li>  
+        <li>आय प्रमाण पत्र</li>  
+        <li>निवास प्रमाण पत्र</li>  
+        <li>आधार कार्ड</li>  
+        <li>पासपोर्ट साइज फोटो</li>  
+      </ul>  
+    </div>  
+    <div class="card">  
+      <h3>दानदाता एवं समाज सहयोग</h3>  
+      <p>छात्रों की शिक्षा और छात्रावास के विकास में सहयोग देने के लिए समिति से संपर्क करें।</p>  
+    </div>  
+  </div>  
+  <div class="notice">  
+    <strong>महत्वपूर्ण:</strong> यह वेबसाइट जानकारी देने के लिए है।  
+    प्रवेश की पुष्टि, दान की रसीद या आवेदन जमा होने की पुष्टि  
+    WhatsApp संपर्क से अलग से प्राप्त करें।  
+  </div>  
+</section>  <section id="contact">  
+  <h2 class="section-title">संपर्क करें</h2>  
+  <div class="contact-box">  
+    <h3>महाराणा कीर्ति सिंह जाट छात्रावास</h3>  
+    <p>मुरार, ग्वालियर, मध्य प्रदेश</p>  
+    <p>प्रबंध समिति से जानकारी एवं छात्र सहायता के लिए संपर्क करें।</p>  
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">  
+      WhatsApp पर संपर्क करें  
+    </a>  
+    <p class="small">WhatsApp बटन चलाने के लिए कोड में अपना सही नंबर डालें।</p>  9074146402
+  </div>  
+</section>  
+</main>  <footer>  
+  <p><strong>महाराणा कीर्ति सिंह जाट छात्रावास</strong></p>  
+  <p>शिक्षा • समाज सेवा • छात्र सहायता</p>  
+  <p>© <span id="year">2026</span> प्रबंध समिति</p>  
+</footer>  
+<script>  
+document.getElementById("year").textContent = new Date().getFullYear();  
+</script>  
+</body>  
+</html>  
